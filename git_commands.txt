@@ -1,0 +1,62 @@
+git |=| means I'm about to have a git command
+git --version |=| tells me what version git I have
+
+git init |=| tells git to start working
+
+git add |=| tells which files I want to track in this commit
+git commit -m "insert whatever label here" |=| saves commit and labels it appropriately
+
+******
+IF YOU TRIGGER VIM WITH MISSING COMMIT MESSAGE
+-First: Type "i" to trigger Insert
+-Second: Type the commit message you should've typed to begin with
+-Third: Hit the esc key to stop Insert
+-Fourth: Type :wq to save the message and escape
+******
+
+git status |=| what's changed since last commit
+git diff |=| tells *what's* changed since last commit
+git log |=| lists all commits with IDs and messages
+
+git diff INSERTcommitID1here INSERTcommitID2here |=| Tells difference between two specific commits. Triggers VIM.
+
+******
+IF YOU TRIGGER VIM WITH GIT DIFF
+-Type q and hit enter to quit.
+******
+
+git branch |=| tells me what branch I'm on
+git checkout -b BRANCHNAME |=| switches me to a new branch called BRANCHNAME
+git checkout BRANCHNAME |=| switches me to an existing branch called BRANCHNAME
+git merge BRANCHNAME |=| merges BRANCHNAME into whatever branch you are currently in
+git branch -d BRANCHNAME |=| deletes BRANCHNAME
+
+
+
+git remote add origin INSERTurlHERE |=| sets INSERTurlHERE as the place to upload to, and calls it "origin"
+git push origin master |=| uploads latest commit (and any previous) from your current branch up to the master branch of "origin"
+
+git clone INSERTurlHERE |=| downloads a copy of INSERTurlHERE's repo to wherever you are when you call it
+git pull origin master |=| downloads any changes from origin's master branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
